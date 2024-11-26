@@ -30,3 +30,10 @@ Este proyecto realiza el reconocimiento facial en tiempo real utilizando la bibl
     "persona2": ["ruta_imagen3.jpg", "ruta_imagen4.jpg"]
   }
   ```
+- Cambia la URL del webhook de Magic Loops, en la variable magicloops_url.
+  ```Python
+  # Configuración de la URL de Magic Loops
+  magicloops_url = "https://magicloops.dev/api/loop/run/4104dda6-72f6-452c-a4af-f5b32d8cd0e6"
+ ```
+
+  
