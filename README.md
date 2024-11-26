@@ -19,3 +19,14 @@ Este proyecto realiza el reconocimiento facial en tiempo real utilizando la bibl
 - **Envío de Notificación a Magic Loops**: Si se detecta a una persona y no se ha enviado una notificación hoy, el código realiza una solicitud HTTP GET al webhook de Magic Loops con un mensaje personalizado que incluye el nombre de la persona y la distancia de similitud entre los embeddings.
 
 - **Lógica de Envío Condicional**: El código mantiene un registro de las personas que ya han recibido una notificación el mismo día para evitar enviar múltiples alertas
+
+### Instrucciones de uso
+- Asegúrate de tener las imágenes de referencia de las personas que deseas reconocer en una carpeta local.
+
+- Actualiza la variable reference_images en el código para incluir las rutas de tus imágenes de referencia, y asigna un nombre a cada persona:
+  ```
+  reference_images = {
+    "persona1": ["ruta_imagen1.jpg", "ruta_imagen2.jpg"],
+    "persona2": ["ruta_imagen3.jpg", "ruta_imagen4.jpg"]
+  }
+  ```
