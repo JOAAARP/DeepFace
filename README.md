@@ -24,7 +24,7 @@ Este proyecto realiza el reconocimiento facial en tiempo real utilizando la bibl
 - Asegúrate de tener las imágenes de referencia de las personas que deseas reconocer en una carpeta local.
 
 - Actualiza la variable reference_images en el código para incluir las rutas de tus imágenes de referencia, y asigna un nombre a cada persona:
-  ```
+  ```Python
   reference_images = {
     "persona1": ["ruta_imagen1.jpg", "ruta_imagen2.jpg"],
     "persona2": ["ruta_imagen3.jpg", "ruta_imagen4.jpg"]
