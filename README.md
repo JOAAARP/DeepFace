@@ -34,6 +34,14 @@ Este proyecto realiza el reconocimiento facial en tiempo real utilizando la bibl
   ```Python
   # Configuración de la URL de Magic Loops
   magicloops_url = "https://magicloops.dev/api/loop/run/4104dda6-72f6-452c-a4af-f5b32d8cd0e6"
- ```
+  ```
+### Archivos del Proyecto
+- reconocimiento_facial.py: Script principal que realiza la captura de video, reconocimiento facial y envío de notificaciones.
+- haarcascade_frontalface_default.xml: Archivo de clasificación en cascada de OpenCV para la detección de rostros.
 
+### Notas
+
+- El modelo de DeepFace Facenet se utiliza para el reconocimiento facial. Puedes cambiar el modelo si lo prefieres (por ejemplo, VGG-Face, OpenFace, etc.).
+- El umbral de similitud de rostros está configurado en 0.5, pero puedes ajustarlo para hacer el reconocimiento más o menos estricto.
+- El sistema solo enviará una notificación al día por persona.
   
